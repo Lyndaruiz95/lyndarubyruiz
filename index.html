@@ -1,4 +1,4 @@
-<html>
+<html ng-app>
   <head>
     <title>
       Lynda Ruby Ruiz
@@ -8,21 +8,34 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	  <link rel="stylesheet" type="text/css" href="src/style/style.scss">
 		<!--Angular-->
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-
-  </head>
-    
-  <body ng-app="">
-
-		<div id="header" ng-include="'src/pages/header2.html'"></div>
-
-		<div>	</br>
-			</div> </br>
-			<div id="aboutMe" ng-include="'src/pages/aboutMe.html'"></div>
-			<div id="education" ng-include="'src/pages/education.html'"></div>
-			<div id="technicalSkills" ng-include="'src/pages/technicalSkills.html'"></div>
-			<div id="workExperiance" ng-include="'src/pages/workExperiance.html'"></div>
-		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<!-- <script src="section.js"></script> -->
+	</head>
 	
+  <body>
+		<!-- navigation bar -->
+		<div id="navigation" ng-include="'src/pages/navigation.html'"></div>
+		<!-- header -->
+		<div id="header" ng-include="'src/pages/header.html'"></div>
+
+		<!-- about me -->
+		<div id="aboutMe" class="semi-solid-section" ng-include="'src/pages/aboutMe.html'"></div>
+		<!-- education -->
+		<div id="education" class="solid-section" ng-include="'src/pages/education.html'"></div>
+
+
+
+		
+		<!-- technical skills -->
+		<!-- <div id="technicalSkills" class="semi-solid-section" ng-include="'src/pages/technicalSkills.html'"></div> -->
+		
+		<!-- work experiance -->
+		<!-- <div id="workExperiance" class="solid-section" ng-include="'src/pages/workExperiance.html'"></div> -->
+
+		<!-- contact -->
+		<div id="contact" class="semi-solid-section" ng-include="'src/pages/contact.html'"></div> 
+
+		<!-- footer -->
+		<div id="footer" ng-include="'src/pages/footer.html'"></div> 		
   </body>
 </html>
