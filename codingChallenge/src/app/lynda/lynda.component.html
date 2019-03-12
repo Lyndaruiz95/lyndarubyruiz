@@ -1,0 +1,17 @@
+<table mat-table matSort [dataSource]="dataSource">
+
+  <ng-container matColumnDef="item">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Item </th>
+    <td mat-cell *matCellDef="let elm">{{elm.item}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="price">
+      <th mat-header-cell mat-sort-header *matHeaderCellDef> Price </th>
+      <td mat-cell *matCellDef="let elm">{{elm.price}}</td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay"></tr>
+
+</table>

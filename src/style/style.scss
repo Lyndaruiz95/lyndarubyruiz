@@ -1,7 +1,26 @@
 .header {
-	background-color: pink;
-
-	&.header-text{
-		color: blue;
+	background-color: #210b37;
+}
+.header-img{
+	width: 100%;
+	//height:50%;
+	//text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50 25 30 25;
+}
+.header-name{
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25 25 30 25;
+	@media screen {
+		
 	}
+
+}
+.header-text{
+	color:white;
 }
