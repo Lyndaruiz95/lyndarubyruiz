@@ -28,7 +28,7 @@ export class LyndaComponent implements OnInit {
   }
 
   getTestInfo(){
-    this.http.get('./lyndarubyruiz/assets/testInfo.json').subscribe((res) => {
+    this.http.get('./assets/testInfo.json').subscribe((res) => {
       //updating json object for display
       for(let i in res){
         this.testInfo.push({"item": i, "price": res[i]});
