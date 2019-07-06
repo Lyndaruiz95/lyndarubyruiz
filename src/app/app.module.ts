@@ -10,11 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LyndaComponent } from './lynda/lynda.component';
+import { BookshelfComponent } from './bookshelf/bookshelf.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LyndaComponent
+    LyndaComponent,
+    BookshelfComponent
   ],
   imports: [
     BrowserModule,
